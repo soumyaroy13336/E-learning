@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-theme="">
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid d-flex justify-content-evenly">
+                <div class="dropdown">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://www.nicepng.com/png/detail/4-46142_open-book-free-vector-png-pic-open-book.png"
+                            alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+                    </a>
+
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <b>E-Learning</b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        <li><a class="dropdown-item" href="#">book a course</a></li>
+                    </ul>
+                </div>
+                <form class="d-flex w-50" role="search">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search cources, test series and educators" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary opacity-75 shadow" type="button">Login</button>
+                    <button class="btn btn-primary opacity-75 shadow" type="button">Sign up</button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid border-bottom">
+                <a class="navbar-brand" href="#">Get started</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item btn btn-light">
+                            <a class="nav-link active" aria-current="page" href="#">Educators</a>
+                        </li>
+                        <li class="nav-item btn btn-light">
+                            <a class="nav-link" href="#">Batch</a>
+                        </li>
+                        <li class="nav-item btn btn-light">
+                            <a class="nav-link" href="#">Store</a>
+                        </li>
+                        <li class="nav-item btn btn-light">
+                            <a class="nav-link" href="#">Subscription plan</a>
+                        </li>
+                        <li class="nav-item btn btn-light">
+                            <a class="nav-link" href="#">Success stories</a>
+                        </li>
+                        <li class="nav-item btn btn-light">
+                            <a class="nav-link" href="#">About exam</a>
+                        </li>
+                        <li class="nav-item dropdown btn btn-light">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item btn btn-outline-success" href="#">Home</a></li>
+                                <li><a class="dropdown-item btn btn-outline-success" href="#">Login</a></li>
+                                <li><a class="dropdown-item btn btn-outline-success" href="#">Sign up</a></li>
+                                <li><a class="dropdown-item btn btn-outline-success" href="#">book a course</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="form-check form-switch ms-auto mt-3 me-3">
+                        <label class="form-check-label ms-3" for="lightSwitch">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://cdn.elearningindustry.com/wp-content/uploads/2020/08/elearning-vs-classroom-based-learning.png"
+                        style="height: 400px;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visit the centre for a personalized experience</h5>
+                        <p>Take a tour of our tech enabled classes and library.Attend free special classes by top
+                            mentors</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://static.businessworld.in/article/article_extra_large_image/1619111145_soDM9U_e_learning.jpg"
+                        style="height: 400px;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visit the centre for a personalized experience</h5>
+                        <p>Take a tour of our tech enabled classes and library.Attend free special classes by top
+                            mentors</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.elearningindustry.com/wp-content/uploads/2021/08/Top-5-Benefits-Of-eLearning-Education.png"
+                        style="height: 400px;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visit the centre for a personalized experience</h5>
+                        <p>Take a tour of our tech enabled classes and library.Attend free special classes by top
+                            mentors</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="crack" class="d-flex justify-content-evenly ">
+        <div>
+            <h1 class="fw-bold">Crack IIT JEE with E-Learning</h1>
+            <p class="fw-semibold">Over 10 crore learners trust us for online and offline coaching</p>
+        </div>
+        <div>
+
+            <button type="button" class="btn btn-outline-dark">Try learning fo free</button>
+            <button type="button" class="btn btn-success">View subscription plan</button>
+        </div>
+    </section>
+    <section>
+        <div class="card text-center mb-2">
+            <div class="card-header">
+                E-Learning
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Join for free</h5>
+                <p class="card-text">Attend free special classes by top mentors.</p>
+                <p class="card-text">Over 10 crore learners trust us for online and offline coaching.</p>
+                <a href="#" class="btn btn-primary">J o i n</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                2 days ago
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <section class="d-flex justify-content-around">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-around">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body btn btn-outline-success">
+                    <h5 class="card-title"><strong>Live classes</strong></h5>
+                    <p class="card-text"><small>watch free online coaching classes by our best educators</small></p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="teacher">
+        <!-- <div class="row row-cols-1 row-cols-md-3 g-4 ps-5"> -->
+        <div class="col">
+            <div class="card ">
+                <img src="https://thedailyguardian.com/wp-content/uploads/2022/04/Why-Teacher-Performance-Evaluations-Are-Important.jpg"
+                    class="card-img-top card-image" alt="...">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-medium fs-6 border px-2">English</p>
+                        <a href="#" class="text-decoration-none">Python</a>
+                        <p></p>
+                    </div>
+                    <h5 class="card-title">Data Structure</h5>
+                    <p class="card-text fst-italic">Soumen Jana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                        <span class="fw-bolder">E-Learning</span>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                        facere molestiae laborum hic voluptas veritatis nemo iusto voluptates commodi aperiam.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">About us</a></li>
+                        <li><a class="text-decoration-none" href="#">Services</a></li>
+                        <li><a class="text-decoration-none" href="#">Terms of service</a></li>
+                        <li><a class="text-decoration-none" href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">Web Design</a></li>
+                        <li><a class="text-decoration-none" href="#">Web Development</a></li>
+                        <li><a class="text-decoration-none" href="#">Product Management</a></li>
+                        <li><a class="text-decoration-none" href="#">Marketing</a></li>
+                        <li ><a class="text-decoration-none" href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>Adamas University</p>
+                    <p>Barasat, 700126</p>
+                    <p>Kolkata</p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+91 55895 55488</span></p>
+                    <p><strong>Email:</strong> <span>example@gmail.com</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>&copy; <span>Copyright</span> <strong class="px-1">E-Learning</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+                Designed by <a href="https://github.com/soumyaroy13336/">E-Learning</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
