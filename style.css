@@ -4,3 +4,19 @@
 #footer{
     background-color: powderblue;
 }
+.teacher{
+    width: 50%;
+    align-items: center;
+}
+.teacher-img{
+    border-radius: 55%;
+    align-items: center;
+    height: 40%;
+    width: 30%;
+}
+.subject{
+    align-items: self-start;
+}
+.english{
+    margin-left: -35%;
+}
